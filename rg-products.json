@@ -1,0 +1,322 @@
+[
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "RX-78-2 鋼彈",
+    "nameJp": "RX-78-2 ガンダム",
+    "franchise": "UC",
+    "releaseDate": "2010-08",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "ZAKU II",
+    "nameJp": "MS-06F ザク II",
+    "franchise": "UC",
+    "releaseDate": "2010-09",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GUNDAM AILE STRIKE",
+    "nameJp": "GAT-X105 ストライクガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2010-11",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "ZEON ZAKU II",
+    "nameJp": "MS-06FZ ザク II FZ",
+    "franchise": "UC",
+    "releaseDate": "2010-12",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GN-001 GUNDAM EXIA",
+    "nameJp": "GN-001 ガンダム エクシア",
+    "franchise": "00",
+    "releaseDate": "2011-02",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "IMPULSE GUNDAM",
+    "nameJp": "ZGMF-X10A ストライクフリーダムガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2011-06",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GNCQ-0000 QANTA",
+    "nameJp": "GN-0000RE/TC ガンダムREDESIGN",
+    "franchise": "00",
+    "releaseDate": "2011-08",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "MVF-M11C MURASAME",
+    "nameJp": "MBF-M1 M1アストレイ",
+    "franchise": "SEED",
+    "releaseDate": "2012-01",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GN-001RE GUNDAM EXIA REPAIR III",
+    "nameJp": "GN-001RE ガンダム エクシア リペアIII",
+    "franchise": "00",
+    "releaseDate": "2012-06",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GX-9900 GUNDAM X",
+    "nameJp": "GX-9900 ガンダムX",
+    "franchise": "X",
+    "releaseDate": "2012-07",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "DESTINY GUNDAM",
+    "nameJp": "ZGMF-X42S デスティニーガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2012-09",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "00 RAISER",
+    "nameJp": "GN-0000+GNR-010 00 ライザー",
+    "franchise": "00",
+    "releaseDate": "2012-10",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "CROSSBONE GUNDAM X1",
+    "nameJp": "XM-X1 クロスボーン・ガンダムX1",
+    "franchise": "UC",
+    "releaseDate": "2012-12",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "BANSHEE NORN",
+    "nameJp": "RX-0N ユニコーンガンダム2号機 バンシィ・ノルン",
+    "franchise": "UC",
+    "releaseDate": "2013-02",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "ZETA GUNDAM",
+    "nameJp": "PMX-000 ゼータガンダム",
+    "franchise": "UC",
+    "releaseDate": "2013-03",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "FORCE IMPULSE GUNDAM",
+    "nameJp": "ZGMF-X56S フォースインパルスガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2013-06",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "FREEDOM GUNDAM",
+    "nameJp": "ZGMF-X10A フリーダムガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2013-08",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "JUSTICE GUNDAM",
+    "nameJp": "CGUE-SA ジャスティスガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2013-10",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "SINANJU",
+    "nameJp": "MSN-06S シナンジュ",
+    "franchise": "UC",
+    "releaseDate": "2013-11",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "STRIKE FREEDOM GUNDAM",
+    "nameJp": "ZGMF-X20A ストライクフリーダムガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2013-12",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GUNDAM MK-II TITANS",
+    "nameJp": "PMX-000 ガンダムMK-II(ティターンズ仕様)",
+    "franchise": "UC",
+    "releaseDate": "2014-02",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "SAZABI",
+    "nameJp": "PMX-000 サザビー",
+    "franchise": "UC",
+    "releaseDate": "2014-03",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "UNICORN GUNDAM",
+    "nameJp": "RX-0 ユニコーンガンダム",
+    "franchise": "UC",
+    "releaseDate": "2014-04",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "TALLGEESE",
+    "nameJp": "OZ-00MS トールギス",
+    "franchise": "WING",
+    "releaseDate": "2014-07",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GUNDAM ASTRAY RED FRAME",
+    "nameJp": "MBF-P02 ガンダムアストレイレッドフレーム",
+    "franchise": "SEED",
+    "releaseDate": "2014-10",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "DOUBLE ZETA GUNDAM",
+    "nameJp": "PMX-000 ダブルゼータガンダム",
+    "franchise": "UC",
+    "releaseDate": "2014-12",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "HI-RESOLUTION GUNDAM",
+    "nameJp": "RX-78-2 ガンダム",
+    "franchise": "UC",
+    "releaseDate": "2015-06",
+    "priceJp": 3780,
+    "priceTw": 832
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GN-002 GUNDAM DYNAMES",
+    "nameJp": "GN-002 ガンダム ダイナモン",
+    "franchise": "00",
+    "releaseDate": "2015-08",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "GOUF CUSTOM",
+    "nameJp": "MS-07B-3 グフカスタム",
+    "franchise": "UC",
+    "releaseDate": "2015-10",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "PERFECT STRIKE GUNDAM",
+    "nameJp": "GAT-X105+AQM/E-X01 パーフェクトストライクガンダム",
+    "franchise": "SEED",
+    "releaseDate": "2015-11",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "CHAR AZNABLE GELGOOG",
+    "nameJp": "PMX-000 シャア専用ゲルググ",
+    "franchise": "UC",
+    "releaseDate": "2015-12",
+    "priceJp": 3240,
+    "priceTw": 713
+  },
+  {
+    "series": "RG",
+    "scale": "1/144",
+    "fullName": "NIGHTINGALE",
+    "nameJp": "PMX-000 ナイチンゲール",
+    "franchise": "UC",
+    "releaseDate": "2016-02",
+    "priceJp": 3240,
+    "priceTw": 713
+  }
+]
