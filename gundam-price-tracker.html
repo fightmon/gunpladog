@@ -2407,7 +2407,7 @@ function switchAiService() {
 function syncAiSettingsVisibility() {
   var btn = document.getElementById('ai-toggle-btn');
   if (!btn) return;
-  btn.style.display = (_sharedApiKey && !_isAdmin) ? 'none' : '';
+  btn.style.display = ((_sharedApiKey || _GROQ_WORKER_URL) && !_isAdmin) ? 'none' : '';
 }
 
 function toggleAiSettings() {
@@ -2437,7 +2437,7 @@ function updateAiStatus() {
   var cKey  = localStorage.getItem('anthropic_api_key');
   var svc   = document.querySelector('input[name="ai-service"]:checked').value;
   var statusEl = document.getElementById('ai-key-status');
-  if (svc === 'groq')   statusEl.textContent = grKey ? '✅ Groq Key 已設定，AI 解析已啟用（完全免費）' : '⚠️ 尚未設定 Groq Key';
+  if (svc === 'groq')   statusEl.textContent = grKey ? '✅ Groq Key 已設定，AI 解析已啟用（完全免費）' : _GROQ_WORKER_URL ? '✅ AI 解析已啟用（共用伺服器，免設定）' : '⚠️ 尚未設定 Groq Key';
   else if (svc === 'gemini') statusEl.textContent = gKey  ? '✅ Gemini Key 已設定，AI 解析已啟用' : '⚠️ 尚未設定 Gemini Key';
   else statusEl.textContent = cKey  ? '✅ Claude Key 已設定，AI 解析已啟用' : '⚠️ 尚未設定 Claude Key';
 }
