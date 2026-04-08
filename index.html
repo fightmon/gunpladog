@@ -1546,6 +1546,8 @@ var _DEFAULT_GROQ_KEY = '';
 // 蝦皮比價 Cloudflare Worker 網址（部署後填入）
 // 例如：'https://shopee-proxy.你的名字.workers.dev'
 var _SHOPEE_WORKER_URL = 'https://polished-grass-f3f9.fightmon.workers.dev';
+// Groq API 代理 Worker（部署 groq-worker.js 後填入，填了就不需要使用者自行設定 Key）
+var _GROQ_WORKER_URL = 'https://lingering-salad-b9dc.fightmon.workers.dev';
 // ▲▲▲ 填完後記得同步 index.html（cp gundam-price-tracker.html index.html）▲▲▲
 
 // 優先順序：管理者 localStorage > 預設 Key
@@ -2568,7 +2570,7 @@ var IMAGE_PROMPT = '你是一個模型/玩具二手買賣資訊萃取助手。�
 async function analyzeImageWithAI() {
   if (_imgList.length === 0) { showToast('請先上傳截圖', 'error'); return; }
   var svc = (document.querySelector('input[name="ai-service"]:checked') || {}).value || 'groq';
-  var hasKey = (svc === 'groq'   && (localStorage.getItem('groq_api_key') || _sharedApiKey)) ||
+  var hasKey = (svc === 'groq'   && (localStorage.getItem('groq_api_key') || _sharedApiKey || _GROQ_WORKER_URL)) ||
                (svc === 'gemini' && localStorage.getItem('gemini_api_key')) ||
                (svc === 'claude' && localStorage.getItem('anthropic_api_key'));
   if (!hasKey) {
@@ -2819,10 +2821,15 @@ function safeParseUsage(key) {
 
 async function parseWithGroq(text) {
   var apiKey = localStorage.getItem('groq_api_key') || _sharedApiKey;
-  if (!apiKey) return null;
-  var resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+  var useWorker = !apiKey && _GROQ_WORKER_URL;
+  if (!apiKey && !useWorker) return null;
+  var url = useWorker ? _GROQ_WORKER_URL : 'https://api.groq.com/openai/v1/chat/completions';
+  var headers = useWorker
+    ? { 'Content-Type': 'application/json' }
+    : { 'Authorization': 'Bearer ' + apiKey, 'Content-Type': 'application/json' };
+  var resp = await fetch(url, {
     method: 'POST',
-    headers: { 'Authorization': 'Bearer ' + apiKey, 'Content-Type': 'application/json' },
+    headers: headers,
     body: JSON.stringify({
       model: 'meta-llama/llama-4-scout-17b-16e-instruct',
       max_tokens: 8192,
@@ -2850,7 +2857,12 @@ async function parseWithGroq(text) {
 // ========== 圖片分析 - Groq Vision ==========
 async function analyzeImageWithGroq() {
   var apiKey = localStorage.getItem('groq_api_key') || _sharedApiKey;
-  if (!apiKey) return null;
+  var useWorker = !apiKey && _GROQ_WORKER_URL;
+  if (!apiKey && !useWorker) return null;
+  var url = useWorker ? _GROQ_WORKER_URL : 'https://api.groq.com/openai/v1/chat/completions';
+  var headers = useWorker
+    ? { 'Content-Type': 'application/json' }
+    : { 'Authorization': 'Bearer ' + apiKey, 'Content-Type': 'application/json' };
   // 組合多張圖片的 content（文字提示 + 所有圖片）
   var multiImgPrompt = _imgList.length > 1
     ? IMAGE_PROMPT.replace('請分析這張', '請分析以下 ' + _imgList.length + ' 張')
@@ -2860,9 +2872,9 @@ async function analyzeImageWithGroq() {
       return { type: 'image_url', image_url: { url: 'data:' + img.mime + ';base64,' + img.base64 } };
     })
   );
-  var resp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+  var resp = await fetch(url, {
     method: 'POST',
-    headers: { 'Authorization': 'Bearer ' + apiKey, 'Content-Type': 'application/json' },
+    headers: headers,
     body: JSON.stringify({
       model: 'meta-llama/llama-4-scout-17b-16e-instruct',
       max_tokens: 8192,
@@ -2989,7 +3001,7 @@ async function parseWithAI(text) {
 }
 
 function hasAnyApiKey() {
-  return !!(_sharedApiKey || localStorage.getItem('groq_api_key') || localStorage.getItem('gemini_api_key') || localStorage.getItem('anthropic_api_key'));
+  return !!(_sharedApiKey || _GROQ_WORKER_URL || localStorage.getItem('groq_api_key') || localStorage.getItem('gemini_api_key') || localStorage.getItem('anthropic_api_key'));
 }
 
 // ========== 主解析函數 ==========
