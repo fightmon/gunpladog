@@ -635,6 +635,9 @@
       table.catalog-table th,
       table.catalog-table td { padding: 9px 9px; }
 
+      /* ── Catalog 盒面圖（手機縮小） ── */
+      .cat-box-img, .cat-box-img-placeholder { width:38px; height:38px; }
+
       /* ── Catalog 搜尋列 ── */
       .catalog-search { font-size: 1rem; min-height: 44px; padding: 10px 14px; }
       .cat-chip { min-height: 36px; padding: 7px 12px; touch-action: manipulation; }
@@ -864,6 +867,8 @@
     .cat-dalong-btn:hover { border-color:#4a9eff; color:#4a9eff; }
     .cat-dalong-cata { opacity:0.6; font-style:italic; }
     .cat-empty { text-align:center; padding:40px 20px; color:var(--text-muted); font-size:0.95rem; }
+    .cat-box-img { width:52px; height:52px; object-fit:contain; border-radius:6px; flex-shrink:0; background:var(--bg); border:1px solid var(--border); }
+    .cat-box-img-placeholder { width:52px; height:52px; flex-shrink:0; }
 
     /* ===== Catalog Modal ===== */
     #catalog-modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:9500; align-items:center; justify-content:center; }
